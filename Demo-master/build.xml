@@ -12,14 +12,14 @@
 		
 <echo>running!</echo>
 
-<jar destfile="${basedir}/jar/santosh.jar" basedir="${basedir}/bin" >
+<jar destfile="${basedir}/jar/madhav.jar" basedir="${basedir}/bin" >
 </jar>
-<war destfile="${basedir}/war/rizwan.war" webxml="${basedir}/WebContent/WEB-INF/web.xml">
+<war destfile="${basedir}/war/sindhu.war" webxml="${basedir}/WebContent/WEB-INF/web.xml">
 <fileset dir="${basedir}/WebContent">
   </fileset>
    <classes dir="${basedir}/WebContent"/>
 </war>
- <ear destfile="${basedir}/ear/akash.ear" appxml="${basedir}">
+ <ear destfile="${basedir}/ear/triveni.ear" appxml="${basedir}">
       <fileset dir="${basedir}" includes="*.jar,*.war"/>
     </ear>
 </target>
