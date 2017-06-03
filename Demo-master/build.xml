@@ -19,7 +19,7 @@
   </fileset>
    <classes dir="${basedir}/WebContent"/>
 </war>
- <ear destfile="${basedir}/ear/triveni.ear" appxml="${basedir}">
+ <ear destfile="${basedir}/ear/san.ear" appxml="${basedir}">
       <fileset dir="${basedir}" includes="*.jar,*.war"/>
     </ear>
 </target>
