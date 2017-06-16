@@ -12,9 +12,9 @@
 		
 <echo>running!</echo>
 
-<jar destfile="${basedir}/jar/madhav.jar" basedir="${basedir}/bin" >
+<jar destfile="${basedir}/jar/triveni.jar" basedir="${basedir}/bin" >
 </jar>
-<war destfile="${basedir}/war/sindhu.war" webxml="${basedir}/WebContent/WEB-INF/web.xml">
+<war destfile="${basedir}/war/sridevi.war" webxml="${basedir}/WebContent/WEB-INF/web.xml">
 <fileset dir="${basedir}/WebContent">
   </fileset>
    <classes dir="${basedir}/WebContent"/>
