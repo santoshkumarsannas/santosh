@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Ant Property Regex" default="version" basedir=".">
+  <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+    <classpath>
+      <pathelement location="${basedir}/lib/ant-contrib.jar"/>
+    </classpath>
+  </taskdef>
+ 
+  <target name="version">
+    <propertyregex
+      property="select.example"
+      input="package.ABC.name"
+      regexp="package\.([^\.]*)\.name"
+      select="\0"
+      casesensitive="false" />
+ 
+    <echo message="${select.example}"/>
+ 
+    <propertyregex
+      property="replace.example"
+      input="package.ABC.name"
+      regexp="(package)\.[^\.]*\.(name)"
+      replace="\1.DEF.\2"
+      casesensitive="false" />
+ 
+    <echo message="${replace.example}"/>      
+  </target>
+</project>
