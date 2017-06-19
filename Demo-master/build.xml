@@ -14,7 +14,7 @@
 
 <jar destfile="${basedir}/jar/triveni.jar" basedir="${basedir}/bin" >
 </jar>
-<war destfile="${basedir}/war/sridevi.war" webxml="${basedir}/WebContent/WEB-INF/web.xml">
+<war destfile="${basedir}/war/sanbro.war" webxml="${basedir}/WebContent/WEB-INF/web.xml">
 <fileset dir="${basedir}/WebContent">
   </fileset>
    <classes dir="${basedir}/WebContent"/>
